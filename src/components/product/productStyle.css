@@ -1,0 +1,368 @@
+.price {
+  position: absolute;
+  background-color: var(--purble);
+  padding: 15px 50px;
+  top: 20px;
+  left: -25px;
+}
+.price::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 17px solid transparent;
+  border-right: 17px solid transparent;
+  border-bottom: 17px solid #3a0761;
+  left: 1px;
+  bottom: -14px;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+.price h3 {
+  color: white;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.numberOfproduct {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  top: -30%;
+}
+
+.first-circle {
+  width: 170px;
+  height: 170px;
+  background-color: #fff;
+  border: 8px solid var(--purble-light);
+  border-right-color: var(--purble);
+  border-radius: 50%;
+  transform: rotate(310deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first-circle::before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 8px;
+  background: var(--purble);
+  position: absolute;
+  border-radius: 5px;
+  right: 12px;
+  top: 21px;
+  transform: rotate(230deg);
+}
+.first-circle::after {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 8px;
+  background: var(--purble);
+  position: absolute;
+  border-radius: 5px;
+  right: 13px;
+  bottom: 20px;
+  transform: rotate(134deg);
+}
+
+.second-circle {
+  width: 145px;
+  height: 145px;
+  background-color: #fff;
+  box-shadow: -2px 2px 9px -5px;
+  border-radius: 50%;
+  transform: rotate(51deg);
+}
+
+.second-circle h4 {
+  font-size: 38px;
+  color: var(--purble);
+  margin: 0;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.second-circle .soldText {
+  text-align: center;
+  margin: 0;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.second-circle .outOfText {
+  text-align: center;
+  margin: 0;
+  font-weight: 500;
+  margin-top: 15px;
+  color: var(--font-color);
+  font-size: 16px;
+}
+
+#chevron {
+  position: relative;
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 6px;
+  height: 60px;
+  width: 200px;
+}
+#chevron:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 51%;
+  background: red;
+  transform: skew(0deg, 6deg);
+}
+#chevron:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background: red;
+  transform: skew(0deg, -6deg);
+}
+
+.trapezoid {
+  border-bottom: 50px solid var(--purble-dark);
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 100px;
+  position: absolute;
+  border-top-left-radius: 62%;
+  border-top-right-radius: 100%;
+  transform: rotate(-53deg);
+  right: 35%;
+  transform: rotate(-40deg);
+  top: 31px;
+}
+.shape-1 {
+  width: 150px;
+  height: 39px;
+  position: absolute;
+  background-color: #340762;
+  z-index: -1;
+  border-radius: 50%;
+  left: -25px;
+  top: 33px;
+}
+.shape-2 {
+  width: 128px;
+  height: 34px;
+  position: absolute;
+  background-color: #ffffff;
+  z-index: -1;
+  border-radius: 50%;
+  left: -16px;
+  top: -3px;
+}
+.winthisText {
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 22px;
+  position: absolute;
+  top: 37px;
+  left: 5px;
+}
+
+.product-display {
+  position: relative;
+  margin-top: 100px;
+  padding: 20px;
+}
+
+.productImage {
+  max-width: 200px;
+}
+.titleProduct {
+  color: var(--purble-dark);
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.subTitleProduct {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--purble);
+  margin: 0;
+  text-align: center;
+}
+.productText {
+  font-size: 12px;
+  color: #c4c4c4;
+}
+.cart {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin: 10px 0;
+}
+
+.wishlist {
+  background-color: var(--purble-dark);
+}
+
+.product {
+  background-color: var(--purble);
+}
+
+.counterProduct {
+  width: 125px;
+  height: 270px;
+  background-color: #340762;
+  position: absolute;
+  right: -57px;
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+  z-index: -1;
+}
+
+.Counter {
+  position: absolute;
+  right: -10px;
+  bottom: 50%;
+  transform: translateY(47%);
+}
+
+.counterMark {
+  width: 10px;
+  height: 10px;
+  border: 2px solid white;
+  text-align: center;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: white;
+  border-radius: 50%;
+  background-color: #7e19a7;
+  font-weight: 6    00;
+}
+.counterText {
+  color: white;
+  font-size: 19px;
+  font-weight: 600;
+}
+.showCard{
+    display: none;
+}
+/* responsive  */
+
+@media screen and (max-width: 1280px) {
+  .trapezoid {
+    display: none;
+  }
+
+  .first-product {
+    margin-top: 50px !important;
+  }
+  .order1 {
+    order: 1;
+    margin-left: auto;
+    display: flex;
+  }
+  .order1 .cart {
+    margin-right: 10px;
+  }
+
+  .order2 {
+    order: 2;
+  }
+  .order3 {
+    order: 3;
+  }
+  .order4 {
+    order: 4;
+  }
+  .price {
+    top: 150px;
+  }
+  .numberOfproduct {
+    top: -90px;
+  }
+  .counterProduct {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    background-color: unset;
+    border-radius: unset;
+    right: unset;
+    height: unset;
+    padding: 15px;
+    margin: 50px auto;
+  }
+  .Counter {
+    display: flex;
+    position: relative;
+    right: unset;
+    bottom: unset;
+    transform: unset;
+    justify-content: center;
+    align-items: center;
+  }
+  .counterText{
+      color:var(--purble);
+      margin: 0 20px;
+  }
+  .counterMark{
+      padding: 10px;
+  }
+  .showCard{
+      display: block;
+      padding: 10px;
+      background-color: var(--purble);
+      border-radius: 30px;
+      text-align: center;
+      max-width:  120px;
+      margin: 10px auto;
+      color: #fff;
+      font-weight: 600;
+  }
+}
+
+
+@media screen and (max-width: 710px) {
+
+.order1{
+    margin-top: 100px;
+}
+.order4{
+    margin-top: 0 !important;
+
+}
+}
+@media screen and (max-width: 460px) {
+
+.order1{
+    margin-top: 200px;
+    margin-right: auto;
+
+}
+.order4{
+    margin-top: 0 !important;
+
+}
+}

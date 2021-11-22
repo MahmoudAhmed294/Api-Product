@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Products from "./components/product/Product";
+import React,{useEffect} from 'react'
+import {getData} from './redux/actions/ListAction'
+import { useDispatch } from 'react-redux';
+import ProductList from "./components/productList/ProductList";
 function App() {
+  const Dispatch = useDispatch();
+
+useEffect(() => {
+
+  Dispatch(getData())
+
+},[Dispatch])
+
+
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ProductList />
     </div>
   );
 }
